@@ -28,7 +28,13 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<distributionManagement>
+	  <repository>
+	    <id>github</id>
+	    <name>GitHub ingenierobinario domain package</name>
+	    <url>https://maven.pkg.github.com/ingenierobinario/ingenierobinario-domain</url>
+	  </repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
