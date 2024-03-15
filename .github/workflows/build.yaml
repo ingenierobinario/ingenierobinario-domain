@@ -63,5 +63,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           artifactName=$(ls *.jar | head -1)
-          mvn deploy -DmuleDeploy \
-          -Dmule.artifact=$artifactName
+          mvn deploy -Dmule.artifact=$artifactName
