@@ -7,6 +7,9 @@ on:
 jobs:
   build-artifact:
     runs-on: ubuntu-latest
+    env:
+      GH_USERNAME: ${{ secrets.GH_USERNAME }}
+      GH_PASSWORD: ${{ secrets.GH_PASSWORD }}
     steps:
     - name: Checkout this repo
       uses: actions/checkout@v4
@@ -23,7 +26,4 @@ jobs:
         distribution: 'zulu'
         java-version: 8
     - name: Deploy with Maven
-      env:
-        GH_USERNAME: ${{ secrets.GH_USERNAME }}
-        GH_PASSWORD: ${{ secrets.GH_PASSWORD }}
       run: mvn -B deploy --settings ./settings.xml

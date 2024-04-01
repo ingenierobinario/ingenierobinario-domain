@@ -1,7 +1,10 @@
+<?xml version="1.0"?>
+<settings>
 <servers>
     <server>
         <id>github</id>
-        <username>${env.GH_USERNAME}</username>
-        <password>${env.GH_PASSWORD}</password>
+        <username>${GH_USERNAME}</username>
+        <password>${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}</password>
     </server>
 </servers>
+</settings>
