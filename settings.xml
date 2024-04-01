@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<settings>
+<servers>
+    <server>
+        <id>github</id>
+        <username>${GH_USERNAME}</username>
+        <password>${GH_PASSWORD}</password>
+    </server>
+</servers>
+</settings>
